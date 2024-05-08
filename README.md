@@ -14,8 +14,11 @@ Este repositório contém um conjunto de dados gerado artificialmente, projetado
 Os dados simulam interações de clientes, operações de venda, e feedback de serviços, incluindo:
 
 • *Pedidos com detalhes de data, produto, e quantidade.*
+
 • *Reclamações categorizadas por tipo e associadas a pedidos específicos.*
+
 • *Informações de funcionários associados a cada transação.*
+
 
 
 ## Conjunto de Dados Modelo Estrela DW
