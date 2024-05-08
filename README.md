@@ -13,14 +13,14 @@ Este repositório contém um conjunto de dados gerado artificialmente, projetado
 
 Os dados simulam interações de clientes, operações de venda, e feedback de serviços, incluindo:
 
-• Pedidos com detalhes de data, produto, e quantidade.
-• Reclamações categorizadas por tipo e associadas a pedidos específicos.
-• Informações de funcionários associados a cada transação.
+• *Pedidos com detalhes de data, produto, e quantidade.*
+• *Reclamações categorizadas por tipo e associadas a pedidos específicos.*
+• *Informações de funcionários associados a cada transação.*
 
 
 ## Conjunto de Dados Modelo Estrela DW
 
-Visão Geral do Banco de Dados
+*Visão Geral do Banco de Dados*
 
 O conjunto de dados para este projeto é armazenado no banco de dados denominado "lanchonete_beth", que está configurado no ambiente Microsoft Fabric. Este banco de dados contém diversas tabelas que são cruciais para a análise e operações diárias da lanchonete.
 
@@ -72,27 +72,27 @@ Objetivo: Aumentar a satisfação do cliente e otimizar as operações para gara
 Análise: Medir e analisar a satisfação do cliente através de pesquisas e feedback direto. Examinar processos operacionais para identificar gargalos ou ineficiências que possam afetar a experiência do cliente.
 
 ## Exploração e Visualização de Dados  
-Objetivo: O processo de exploração e visualização de dados é crucial para transformar grandes volumes de dados brutos em insights acionáveis. Este processo abrange desde a preparação inicial dos dados até a apresentação final de informações em formatos visuais compreensíveis.
+*Objetivo:* O processo de exploração e visualização de dados é crucial para transformar grandes volumes de dados brutos em insights acionáveis. Este processo abrange desde a preparação inicial dos dados até a apresentação final de informações em formatos visuais compreensíveis.
 
-Componentes Principais:
+*Componentes Principais:*
 
-Data Lake:
+*Data Lake:*
     Descrição: Um data lake armazena grandes volumes de dados em seu formato natural (bruto). Ele é fundamental para organizações que coletam dados de várias fontes em diferentes formatos, pois permite uma flexibilidade significativa na manipulação e análise desses dados.
     Função: No contexto deste projeto, o data lake serve como o repositório primário onde todos os dados coletados são armazenados antes de serem processados. Isso inclui dados gerados, logs de sistema, dados de transações, e mais.
-Data Pipeline:
+*Data Pipeline:*
     Descrição: Um data pipeline é um conjunto de operações de dados sequenciais automatizadas, destinadas a permitir a transferência e transformação de dados de uma fonte para um destino.
     Função: Para este projeto, o pipeline é responsável por extrair dados do data lake, transformá-los (limpeza, agregação e enriquecimento), e carregá-los no data warehouse ou em ferramentas de visualização. Este processo é crucial para garantir que os dados estejam prontos para análise e visualização no Power BI.
-Consultas SQL:
+*Consultas SQL:*
     Descrição: SQL (Structured Query Language) é uma linguagem de programação utilizada para gerenciar e manipular bancos de dados relacionais.
     Função: As consultas SQL são utilizadas para extrair dados específicos do data warehouse, baseando-se em critérios definidos. No contexto deste projeto, são utilizadas para analisar o desempenho dos funcionários, gerenciar reclamações dos clientes, e observar as tendências de vendas e pedidos.
-Power BI:
+*Power BI:*
     Descrição: Power BI é uma ferramenta de visualização de dados e business intelligence que permite transformar dados de várias fontes em dashboards interativos e relatórios analíticos.
     Função: No projeto, o Power BI é usado para criar visualizações impactantes e dashboards que facilitam a interpretação dos dados. Ele permite aos stakeholders visualizar tendências, padrões e outliers rapidamente, facilitando a tomada de decisões baseada em dados.
-Documentação do Projeto:
+*Documentação do Projeto:*
     Descrição: A documentação é um aspecto crítico de qualquer projeto de dados, proporcionando um registro detalhado do design do sistema, arquitetura de dados, processos de desenvolvimento, e insights derivados das análises.
     Função: Para este projeto, a documentação inclui detalhes sobre a estrutura do data warehouse, descrições das tabelas e campos, um registro das consultas SQL utilizadas, e explicações das visualizações desenvolvidas no Power BI. Ela serve como um manual para usuários e desenvolvedores, facilitando a manutenção e escalabilidade do sistema e garantindo que novos membros da equipe possam entender e contribuir para o projeto eficazmente.
 
-Importância: A exploração e visualização de dados no contexto deste projeto são essenciais para identificar rapidamente áreas de melhoria na operação da empresa, avaliar o impacto de diferentes estratégias, e monitorar a saúde operacional e financeira da organização de forma contínua. A capacidade de visualizar complexas interações de dados de forma intuitiva é crucial para transformar dados em ações estratégicas eficazes.
+*Importância:* A exploração e visualização de dados no contexto deste projeto são essenciais para identificar rapidamente áreas de melhoria na operação da empresa, avaliar o impacto de diferentes estratégias, e monitorar a saúde operacional e financeira da organização de forma contínua. A capacidade de visualizar complexas interações de dados de forma intuitiva é crucial para transformar dados em ações estratégicas eficazes.
 
 ## Resultados  
 
@@ -124,16 +124,16 @@ Descrição: Esta consulta fornece uma visão clara das vendas por categoria de 
 
 ## Conclusão  
 
-Influência do Desempenho dos Funcionários na Queda dos Pedidos:
+*Influência do Desempenho dos Funcionários na Queda dos Pedidos:*
 A análise dos dados mostrou que determinados funcionários estavam consistentemente associados a um maior número de reclamações e a uma redução nos pedidos. Particularmente, os dados extraídos das consultas 1, 2 e 4 revelaram que funcionários com menor nível de experiência ou aqueles recém-contratados enfrentavam desafios significativos que afetavam suas performances. Por exemplo, a consulta 4, que detalhou o desempenho dos funcionários em termos de reclamações e experiência, indicou que os novatos ou aqueles com experiência insuficiente contribuíam para um número desproporcional de reclamações.
 
-Relação entre Reclamações e Queda de Pedidos:
+*Relação entre Reclamações e Queda de Pedidos:*
 As análises das consultas 2 e 5 mostraram que tipos específicos de reclamações estavam frequentemente ligados a uma diminuição subsequente nos pedidos durante períodos subsequentes, conforme demonstrado na consulta 3. Isso sugere que as reclamações não eram apenas incidentes isolados, mas sim indicativos de problemas mais profundos que afetavam a percepção e a satisfação do cliente.
 
-Medidas Implementadas:
+*Medidas Implementadas:*
 Diante dessas descobertas, a empresa implementou um programa abrangente de treinamento e certificação para todos os funcionários, com um foco especial nos recém-contratados e naqueles cujos desempenhos estavam abaixo das expectativas. O objetivo era melhorar as competências essenciais, como atendimento ao cliente, gestão de reclamações, e eficiência operacional. A certificação foi usada não apenas como uma ferramenta de avaliação, mas também como um incentivo para o desenvolvimento profissional contínuo.
 
-Impacto das Soluções Implementadas:
+*Impacto das Soluções Implementadas:*
 Após a implementação dessas medidas, observou-se uma melhoria notável no desempenho dos funcionários. As reclamações diminuíram significativamente, e houve uma recuperação gradual no número de pedidos. A relação direta entre o aumento da competência dos funcionários e a melhoria nos indicadores de performance reafirma a importância de investimentos contínuos em treinamento e desenvolvimento profissional.
 
 Essa análise demonstra claramente como a capacitação e a melhoria das habilidades dos funcionários são cruciais para reversão de tendências negativas no desempenho empresarial. Portanto, continuar a investir em treinamento e desenvolvimento é essencial para manter a competitividade e a satisfação do cliente em longo prazo.
